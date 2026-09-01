@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 class Connection {
 
     // details
@@ -17,3 +18,18 @@ class Connection {
     }
 }
 ?>
+=======
+// connect to MySQL
+$server = "localhost";
+$user = "root";   // default Laragon user
+$pass = "";       // default Laragon password
+$db = "pet_grooming";
+
+$conn = new mysqli($server, $user, $pass, $db);
+
+// check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+>>>>>>> 4627ab515fb29804fe9888c55f2a7c17ef433952
